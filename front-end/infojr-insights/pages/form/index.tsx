@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Home() {
+export default function form() {
   return (
     <div>
-      <h2> oaaaaaaaaaaaai</h2>
+      <h2> oi</h2>
     </div>
   );
 }
