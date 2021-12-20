@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from "./style";
+import { ContainerButton } from "./style";
 
 interface ButtonProps {
     backgroundColor:string;
@@ -11,10 +11,10 @@ interface ButtonProps {
 const Button: React.FC <ButtonProps> = ({
     backgroundColor = "red",
     hoverColor = "white",
-    children = "olá",
+    children = "Adicionar Link",
     color= "black" }) => (
-    <Container backgroundColor={backgroundColor} hoverColor={hoverColor} >
-    {children} </Container>
+    <ContainerButton backgroundColor={backgroundColor} hoverColor={hoverColor} >
+    {children} </ContainerButton>
 );
 
 export default Button

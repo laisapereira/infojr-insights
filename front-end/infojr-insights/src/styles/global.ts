@@ -6,15 +6,17 @@ export default createGlobalStyle `
     padding: 0;
     margin: 0;
     border: 0;
+    outline: 0;
     box-sizing:border-box;
     text-decoration: none; 
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;  
 }
 
 body{
     background-color: #1A1C17;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 body, html, #root {

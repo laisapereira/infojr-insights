@@ -6,7 +6,7 @@ interface ContainerProps {
     hoverColor:string;
 }
 
-export const Container = styled.button<ContainerProps>`
+export const ContainerButton = styled.button<ContainerProps>`
 
 width: 20rem;
 height: 5rem;
