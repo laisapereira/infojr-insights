@@ -1,9 +1,10 @@
-
+import React from 'react';
+import Header from '../src/components/Header'
 
 export default function Home() {
   return (
     <div>
-     <h1>oi</h1>
+      <Header />
     </div>
-  )
+  );
 }
