@@ -38,7 +38,7 @@ export const MenuItem = styled.a `
 
 export const Button = styled.button`
     
-    height: 40px;
+    height: 2.5rem;
     border-radius: 0.8rem;
     background-color: rgba(124, 177, 36, 1);
 

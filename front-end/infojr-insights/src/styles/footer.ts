@@ -32,14 +32,38 @@ export const SocialNetwork = styled.div`
     }
 
     div img {
-        width:3vw;
+        width:5vw;
+        
+    }
+
+    img:hover {
+        transform:scale(1.1)
+        
         
     }
 
     @media(max-width:768px) {
         flex-direction:column;
-        padding: 6.4rem 0 6.4rem 0;
+        padding: 3.4rem 0 3.4rem 0;
+        gap: 3rem;
+        
+        img {
+            width:32vw;
+        }
 
+
+        div {
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        div img {
+            width:7vw;
+            
+        }
+
+       
+        
     
     }
 
@@ -50,16 +74,20 @@ export const Contact = styled.div`
 
     p {
         text-align:center;
+    
+        
     }
 
 
-    @media(max-width:768px) {
-        width: 80%;
-
-        div img {
-            width:5vw;
-            
+    @media(max-width:600px) {
+        width:70%;
+        padding-bottom: 0;
+        
+        p {
+            padding-bottom: 2.4rem;
         }
+
+        
     
     }
 

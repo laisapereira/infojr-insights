@@ -8,13 +8,13 @@ const Header: React.FC = () => (
         <SocialNetwork>
             <a href="/index"><img src="/Logo Infojr.svg" alt="logo" /></a>
             <div>
-                <img src="/linkedin.svg" alt="linkedin"/>
-                <img src="/be.svg" alt="behance"/>
-                <img src="/dribble.svg" alt="dribble"/>
-                <img src="/instagram.svg" alt="instagram"/>
-                <img src="/facebook.svg" alt="facebook"/>
-                <img src="/youtube.svg" alt="youtube"/>
-                <img src="/spotify.svg" alt="spotify"/>
+                <a href="#"><img src="/linkedin.svg" alt="linkedin"/></a>
+                <a href="#"><img src="/be.svg" alt="behance"/></a>
+                <a href="#"><img src="/dribble.svg" alt="dribble"/></a>
+                <a href="#"><img src="/instagram.svg" alt="instagram"/></a>
+                <a href="#"><img src="/facebook.svg" alt="facebook"/></a>
+                <a href="#"><img src="/youtube.svg" alt="youtube"/></a>
+                <a href="#"><img src="/spotify.svg" alt="spotify"/></a>
             </div>
 
 

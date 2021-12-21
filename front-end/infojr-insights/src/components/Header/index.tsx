@@ -11,7 +11,7 @@ const Header: React.FC = () => (
 
         <nav>
           <MenuItem><a href="/">Início</a></MenuItem>
-          <MenuItem><a href="/">Todos os links</a></MenuItem>
+          <MenuItem><a href="/">Todos os Links</a></MenuItem>
           <Button><a href="/form">Adicionar Link</a></Button>
         </nav>
 
