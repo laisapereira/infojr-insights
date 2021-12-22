@@ -11,11 +11,11 @@ export default createGlobalStyle `
     text-decoration: none; 
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    color: #ffffff;  
+    color: ${props => props.theme.colors.text};
 }
 
 body{
-    background-color: #1A1C17;
+    background-color: ${props => props.theme.colors.background}
     
 }
 
