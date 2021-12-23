@@ -2,11 +2,12 @@ import React from 'react'
 import { Container,  Title, Main, Buttons} from '../../styles/asidehome'
 import { Button } from '../../styles/header'
 
+
 const AsideHome: React.FC = () => (
     <Container>
         <Title>
-            <h1>infoJr<span>insights</span></h1>
-            <p>Ideias para a crise</p>
+            <img style= {{width: "16rem" }}src={'infoJrinsights.svg'} alt="logo" />
+            <img style= {{width: "11rem" }}src={'subtitle.svg'} alt="subtitle" />
         </Title>
 
         <Main>
@@ -21,8 +22,8 @@ const AsideHome: React.FC = () => (
 
 
         <Buttons>
-            <a href="#"><Button id="first">Adicionar link</Button></a>
-            <a href="#"><button id="second">Ver todos os links</button></a>
+            <a href="#"><Button id="button-aside-one">Adicionar link</Button></a>
+            <a href="#" ><Button id="button-aside-two" >Ver todos os links</Button></a>
             <p>Feito com 💚 <span>Info Jr UFBA</span></p>
             
         </Buttons>

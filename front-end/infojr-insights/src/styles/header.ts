@@ -88,7 +88,8 @@ export const Button = styled.button`
                 right: 20%;
                 height: 50vh;
                 border-radius: 1.2rem;
-                border: 1px solid white;
+                background-color: ${props => props.theme.colors.background};
+                overflow:hidden;
 
             
             }

@@ -16,19 +16,14 @@ export const Container = styled.div`
 `
 export const Title = styled.div`
 
-    span {
-        font-weight: lighter; 
-        color:white;
-    } 
-    
-    p {
-        color: ${props => props.theme.colors.primary}
-    }
+    display:flex;
+    flex-direction:column;
+    gap: 0.2rem
 
 
 `
 export const Main = styled.div`
-    width: 31%;
+    width: 32%;
     display:flex;
     flex-direction:column;
     gap: 1.5rem;
@@ -42,10 +37,30 @@ export const Main = styled.div`
 export const Buttons = styled.div`
     display:flex;
     flex-direction:column;
-    align-items:center;
-    width: 18em;
+    align-items:center; 
+    margin-left: -40rem;
+    gap: 2.2rem;
 
-    
+    #button-aside-one, 
+    #button-aside-two {
+        padding: 1rem 7rem;
+        border-radius: 3rem;
+        height:max-content;
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    #button-aside-two {
+        background-color: transparent;
+        border:1px solid ${props => props.theme.colors.primary};
+        padding: 1rem 6rem;
+
+        &:hover {
+           background-color:  ${props => props.theme.colors.primary};
+        }
+    }
     
     
 
