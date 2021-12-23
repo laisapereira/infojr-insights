@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, SocialNetwork, Contact } from '../../styles/footer';
 
-const Header: React.FC = () => (
+const Footer: React.FC = () => (
 
   <Container>
     
@@ -36,4 +36,4 @@ const Header: React.FC = () => (
 )
 
     
-export default Header
+export default Footer
