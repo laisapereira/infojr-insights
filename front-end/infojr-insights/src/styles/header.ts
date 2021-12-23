@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+
 export const Container = styled.div `
     display:flex;
     justify-content: space-around;
@@ -31,22 +32,13 @@ export const MenuItem = styled.a `
 
     }
 
-    a::before {
-        color: white
-
-    }
-
-    a::after {
-        color: rgba(124, 177, 36, 1);  
-    }
-
 `
 
 
 
 export const Button = styled.button`
     
-    height: 40px;
+    height: 2.5rem;
     border-radius: 0.8rem;
     background-color: rgba(124, 177, 36, 1);
 
