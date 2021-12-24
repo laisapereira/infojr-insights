@@ -6,8 +6,8 @@ import { Button } from '../../styles/header'
 const AsideHome: React.FC = () => (
     <Container>
         <Title>
-            <img style= {{width: "16rem" }}src={'infoJrinsights.svg'} alt="logo" />
-            <img style= {{width: "11rem" }}src={'subtitle.svg'} alt="subtitle" />
+            <img id="title" src={'infoJrinsights.svg'} alt="logo" />
+            <img id="subtitle"src={'subtitle.svg'} alt="subtitle" />
         </Title>
 
         <Main>

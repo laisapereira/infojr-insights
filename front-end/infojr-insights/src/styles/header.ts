@@ -8,8 +8,9 @@ export const Container = styled.div `
     padding-top: 2rem;
     z-index: 1000;
             
-    @media (max-width: 660px) {
-        
+    @media (max-width: 768px) {
+        padding: 2rem 3rem;
+        justify-content: space-between;
 
 
         div img {
@@ -45,7 +46,7 @@ export const Button = styled.button`
         padding: 1.1rem 2.3rem;
     }
 
-    @media (max-width: 660px) {
+    @media (max-width: 768px) {
 
         
 
@@ -74,7 +75,7 @@ export const Button = styled.button`
         }
     
 
-        @media (max-width: 660px) {
+        @media (max-width: 768px) {
             #btn-menu{
                 display:flex;
             }
