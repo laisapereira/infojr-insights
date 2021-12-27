@@ -24,7 +24,7 @@ const AsideHome: React.FC = () => (
         <Buttons>
             <a href="#"><Button id="button-aside-one">Adicionar link</Button></a>
             <a href="#" ><Button id="button-aside-two" >Ver todos os links</Button></a>
-            <p>Feito com 💚 <span>Info Jr UFBA</span></p>
+            <p style={{textAlign:"center", padding:"2rem"}}>Feito com 💚 <span>Info Jr UFBA</span></p>
             
         </Buttons>
 

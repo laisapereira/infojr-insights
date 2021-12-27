@@ -3,9 +3,9 @@ import styled from "styled-components"
 
 export const Container = styled.div `
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
-    padding-top: 2rem;
+    padding: 2rem 7rem; 
     z-index: 1000;
             
     @media (max-width: 768px) {

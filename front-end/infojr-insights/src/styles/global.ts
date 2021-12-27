@@ -10,7 +10,7 @@ export default createGlobalStyle `
     box-sizing:border-box;
     text-decoration: none; 
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: ${props => props.theme.colors.font};
     color: ${props => props.theme.colors.text};
 }
 

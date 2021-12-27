@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Header />
 
-      <div style={{display:"flex"}}>
+      <div style={{display:"flex", alignItems:"center", padding:"0vw 7vw 5vw 9vw", gap: "8rem"} }>
         <AsideHome />
         <Card />
       </div>

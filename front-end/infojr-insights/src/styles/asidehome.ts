@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
+    width: 90vw;
     margin: 12rem auto;
-    width: 70vw;
     gap: 3rem;
 
     @media(max-width: 768px) {
@@ -57,10 +57,16 @@ export const Title = styled.div`
 
 `
 export const Main = styled.div`
-    width: 32%;
     display:flex;
     flex-direction:column;
     gap: 1.5rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+    p {
+        font-weight: 400;
+        line-height: 1.4rem;
+    }
 
     span {
         color: ${props => props.theme.colors.primary}
@@ -79,13 +85,12 @@ export const Main = styled.div`
 export const Buttons = styled.div`
     display:flex;
     flex-direction:column;
-    align-items:center; 
-    margin-left: -40rem;
-    gap: 2.2rem;
+    align-items:flex-start;
+    gap: 1rem;
 
     #button-aside-one, 
     #button-aside-two {
-        padding: 1rem 7rem;
+        padding: 1rem 5.7rem;
         border-radius: 3rem;
         height:max-content;
 
@@ -97,7 +102,7 @@ export const Buttons = styled.div`
     #button-aside-two {
         background-color: transparent;
         border:1px solid ${props => props.theme.colors.primary};
-        padding: 1rem 6rem;
+        padding: 1rem 4.7rem;
 
         &:hover {
            background-color:  ${props => props.theme.colors.primary};
