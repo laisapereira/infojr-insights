@@ -5,7 +5,6 @@ export const Container = styled.div`
     align-items:center;
     flex-direction: column;
     width: 100vw;
-    padding-top: 5rem; /*retirar quando colocar o corpo da página*/
     
 
 

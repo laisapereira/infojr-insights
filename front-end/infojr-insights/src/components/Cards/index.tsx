@@ -13,7 +13,7 @@ const Card: React.FC = () => {
 
 
         <Inform>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, arcu...</h4>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</h4>
             <h5> Curso </h5>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu fermentum feugiat ipsum in in quis. 
             Mattis sit ac, posuere eu tellus risus sed leo vel. Purus sagittis, arcu... </p>

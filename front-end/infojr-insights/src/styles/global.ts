@@ -26,7 +26,30 @@ body, html, #root {
 }
 
 
+.container-home {
+    display:flex;
+    padding:0vw 10vw 5vw 12vw;
+    align-items:center;
+    gap: 8rem;
+}
+
+@media(max-width: 768px) {
+        
+    .container-home {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 16.4rem;
+    }
+}
 
 
+@media screen and (min-width: 769px) and (max-width: 1200px) {
 
+    .container-home {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 16.4rem;
+    }
+
+}
 `

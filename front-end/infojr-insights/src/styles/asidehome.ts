@@ -6,6 +6,7 @@ export const Container = styled.div`
     width: 90vw;
     margin: 6rem auto;
     gap: 3rem;
+    
 
     @media(max-width: 768px) {
         
@@ -16,6 +17,7 @@ export const Container = styled.div`
     @media screen and (min-width: 769px) and (max-wdith: 1300px) {
 
         margin: 7rem auto;
+       
         
 
         
@@ -74,10 +76,20 @@ export const Main = styled.div`
 
     @media(max-width: 800px) {
         
-        width: 100%;
+        width: 80%;
 
 
 
+    }
+
+
+    @media screen and (min-width: 769px) and (max-wdith: 1300px) {
+
+        width: 50vw;
+       
+        
+
+        
     }
 
 
@@ -106,17 +118,11 @@ export const Buttons = styled.div`
 
     @media(max-width: 768px) {
         
-        width: 100%;
+        width: 80%;
         margin: 0;
+        align-items:center;
 
-        #button-aside-one, 
-        #button-aside-two {
-            padding: 1rem 5rem;
-        }
-
-        #button-aside-two {
-            padding: 1rem 4rem;
-        }
+        
 
 
     }

@@ -5,8 +5,10 @@ export const Container = styled.div `
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding: 2rem 7rem; 
+    padding: 2rem 10rem 1rem 10rem; 
     z-index: 1000;
+    background: #191919;
+
             
     @media (max-width: 768px) {
         padding: 2rem 3rem;
@@ -16,6 +18,10 @@ export const Container = styled.div `
         div img {
             width: 16vw;
         }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        padding: 2rem 5.5rem 1rem 4rem;
     }
 
     

@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       
 
-      <div style={{display:"flex", alignItems:"center", padding:"0vw 7vw 5vw 9vw", gap: "8rem"} }>
+      <div className="container-home" >
         <AsideHome />
         <ContainerCards>
           <Card />
