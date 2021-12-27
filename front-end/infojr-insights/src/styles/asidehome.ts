@@ -4,7 +4,7 @@ export const Container = styled.div`
     display:flex;
     flex-direction:column;
     width: 90vw;
-    margin: 12rem auto;
+    margin: 6rem auto;
     gap: 3rem;
 
     @media(max-width: 768px) {
@@ -88,24 +88,14 @@ export const Buttons = styled.div`
     align-items:flex-start;
     gap: 1rem;
 
-    #button-aside-one, 
+ 
     #button-aside-two {
-        padding: 1rem 5.7rem;
+        padding: 1rem 4.7rem;
         border-radius: 3rem;
         height:max-content;
 
         &:hover {
             cursor:pointer;
-        }
-    }
-
-    #button-aside-two {
-        background-color: transparent;
-        border:1px solid ${props => props.theme.colors.primary};
-        padding: 1rem 4.7rem;
-
-        &:hover {
-           background-color:  ${props => props.theme.colors.primary};
         }
     }
 
@@ -143,8 +133,7 @@ export const Buttons = styled.div`
     
     
 
-
-
-
 `
+
+
     

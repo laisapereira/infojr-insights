@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import { Container, Inform } from '../../styles/card';
 
 const Card: React.FC = () => {
