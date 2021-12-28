@@ -6,7 +6,8 @@ import { Button } from '../../styles/header'
 const Ideia: React.FC = () => (
     <Container>
         <div>
-            <a href="#"><img src={'ideia.svg'} alt="ideia" /></a>
+            <a href="#"><img id = "desk-image" src={'image-ideia.svg'} alt="ideia" /></a>
+            <a href="#"><img id = "mob-image" src={'img-mobile.svg'} alt="ideia" /></a>
         </div>
         
         <ContainerIdeia>

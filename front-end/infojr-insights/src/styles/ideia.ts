@@ -6,14 +6,47 @@ export const Container = styled.div`
     flex-direction:column;
     align-items:center;
     
-    img{
+    #desk-image{
         width: 100vw;
         
+    }
+
+    #mob-image {
+        display:none;
     }
 
     div {
         display:flex;
         flex-direction:column;
+    }
+
+    @media(max-width:500px) {
+        
+        #desk-image{
+            display:none;
+            
+        }
+    
+        #mob-image {
+            display:flex;
+            width:100vw;
+            
+        }
+    }
+
+    @media screen and (min-width:501px) {
+        #desk-image{
+            display:none;
+            
+        }
+    
+        #mob-image {
+            display:flex;
+            width:100%;
+            height:80vh;
+            
+        }
+    
     }
 
     
