@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Container,  Title, Main, Buttons} from '../../styles/asidehome'
 import { Button } from '../../styles/header'
 
