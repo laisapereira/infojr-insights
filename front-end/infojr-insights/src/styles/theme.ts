@@ -4,6 +4,8 @@ const theme = {
         text: "#FFFFFF",
         primary: "#7CB124",
         font: "'Popins', sans-serif",
+        second: "#BADC41"
+
 
     }
 }

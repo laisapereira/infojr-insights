@@ -21,6 +21,12 @@ body, html, #root {
     width:100vw;
     height: 100vh;
 }
+
+a:hover,
+button:hover {
+    cursor:pointer;
+}
+
 .container-home {
     display:flex;
     padding:0vw 10vw 5vw 12vw;
