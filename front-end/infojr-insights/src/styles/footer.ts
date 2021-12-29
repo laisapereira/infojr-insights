@@ -70,6 +70,9 @@ export const SocialNetwork = styled.div`
 export const Contact = styled.div`
 
     padding: 3.5rem 0 3.5rem 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 
     p {
         text-align:center;
