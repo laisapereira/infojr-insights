@@ -4,7 +4,7 @@ export const Container = styled.div`
     display:flex;
     flex-direction:column;
     width: 90vw;
-    margin: 6rem auto;
+    margin: 15rem auto;
     gap: 3rem;
     
     @media(max-width: 768px) {

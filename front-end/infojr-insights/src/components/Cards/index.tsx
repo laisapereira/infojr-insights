@@ -1,4 +1,4 @@
-import { Container, Inform } from '../../styles/card';
+import { ContainerCard, Inform } from '../../styles/card';
 
 const Card: React.FC = () => {
 
@@ -6,7 +6,7 @@ const Card: React.FC = () => {
 
 
     
-      <Container>
+      <ContainerCard>
         <div>
             <a href="/ideia"><img src={'icon_ideia.svg'} alt="logo" /></a>
         </div>
@@ -23,7 +23,7 @@ const Card: React.FC = () => {
          
           
 
-      </Container>
+      </ContainerCard>
 
                 
                   

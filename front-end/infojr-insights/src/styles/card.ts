@@ -21,7 +21,7 @@ export const ContainerCards = styled.div `
     
 `
 
-export const Container = styled.div `
+export const ContainerCard = styled.div `
     display:flex;
     gap: 2.9rem;
     align-items:center;
