@@ -73,6 +73,8 @@ export const Contact = styled.div`
 
     p {
         text-align:center;
+        width: 80vw;
+        
     
         
     }
@@ -84,6 +86,7 @@ export const Contact = styled.div`
         
         p {
             padding-bottom: 2.4rem;
+            
         }
 
         

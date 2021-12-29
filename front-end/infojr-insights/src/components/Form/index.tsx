@@ -41,7 +41,7 @@ const Ideia: React.FC = () => (
         </ContainerForms>
 
         <EachForm>
-             <label htmlFor="descrrip">Digite uma descrição para este link</label>
+             <label htmlFor="descrrip"><span>Digite uma</span> Descrição <span>para este link</span></label>
              <textarea id="descrip" placeholder='Escreva uma descrição'/>
         </EachForm>
 
