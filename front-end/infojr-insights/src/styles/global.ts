@@ -12,8 +12,10 @@ export default createGlobalStyle `
     font-family: ${props => props.theme.colors.font};
     color: ${props => props.theme.colors.text};
 }
+
 body{
-    background-color: ${props => props.theme.colors.background}
+    background-color: ${props => props.theme.colors.background};
+    font-size:1.6rem;
     
 }
 body, html, #root {
@@ -21,6 +23,16 @@ body, html, #root {
     width:100vw;
     height: 100vh;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+a:hover,
+button:hover {
+    cursor:pointer;
+}
+
 .container-home {
     display:flex;
     padding:0vw 10vw 5vw 12vw;

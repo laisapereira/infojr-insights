@@ -47,7 +47,6 @@ export const Main = styled.div`
     font-family: 'Poppins', sans-serif;
     p {
         font-weight: 400;
-        line-height: 1.4rem;
     }
     span {
         color: ${props => props.theme.colors.primary}
