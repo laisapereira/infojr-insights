@@ -7,11 +7,12 @@ export const Container = styled.div`
     align-items:center;
     
     #desk-image{
+        display:flex;
         width: 100vw;
         
     }
 
-    #mob-image {
+    #mob-image{
         display:none;
     }
 
@@ -34,20 +35,8 @@ export const Container = styled.div`
         }
     }
 
-    @media screen and (min-width:501px) {
-        #desk-image{
-            display:none;
-            
-        }
+
     
-        #mob-image {
-            display:flex;
-            width:100%;
-            height:80vh;
-            
-        }
-    
-    }
 
     
 
@@ -67,21 +56,60 @@ export const ContainerIdeia = styled.div`
         button {
             padding: 1rem 4rem;
             border-radius: 3rem;
-            width: 18rem;
+            width: 24vw;
             height:max-content;
             margin-top: 3rem;
             
         }
 
         button:hover {
-            background-color: ${props => props.theme.colors.primary}
+            background-color: ${props => props.theme.colors.second}
             
         }
 
 
         p {
             text-align:justify;
+            font-size: 1.6rem;
+            width:90%;
         }
+
+
+        @media(max-width:500px) {
+
+
+            padding:4.4rem;
+
+
+            h1 {
+                font-size:2.4rem;
+            }
+
+            p {
+                text-align:initial;
+            }
+
+            button {
+                width:60vw;
+            }
+        }
+
+
+        @media screen and (min-width:501px) and (max-width:1024px) {
+
+            p {
+                text-align:initial;
+                font-size: 1.6rem;
+                width:100%;
+            }
+
+            button {
+                width:40vw;
+            }
+
+
+
+    }
 
             
 

@@ -31,7 +31,7 @@ export const Container = styled.div `
 export const MenuItem = styled.a `
 
     a: hover {
-        color: rgba(124, 177, 36, 1); 
+        color:  ${props => props.theme.colors.second}
 
     }
 `
@@ -40,12 +40,13 @@ export const MenuItem = styled.a `
 
 export const Button = styled.button`
     
-    height: 2.5rem;
+    height: max-content;
     border-radius: 0.8rem;
-    background-color: #7CB124;
+    background-color:  ${props => props.theme.colors.primary};
+    padding: 1.1rem;
 
     &: hover {
-        background-color: rgba(140, 190, 46, 1);
+        background-color:  ${props => props.theme.colors.second};
     }
 
     a {

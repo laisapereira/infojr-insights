@@ -12,14 +12,20 @@ export default createGlobalStyle `
     font-family: ${props => props.theme.colors.font};
     color: ${props => props.theme.colors.text};
 }
+
 body{
-    background-color: ${props => props.theme.colors.background}
+    background-color: ${props => props.theme.colors.background};
+    font-size:1.6rem;
     
 }
 body, html, #root {
     overflow-x:hidden;
     width:100vw;
     height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 a:hover,
