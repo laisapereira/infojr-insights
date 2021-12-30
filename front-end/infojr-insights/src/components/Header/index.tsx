@@ -42,8 +42,8 @@ const Header: React.FC = () => {
               
             </nav>
 
-            <Background className={menuAtivado ? "open" : "closed"} onClick ={toggleMenu}>
-
+            <Background className={menuAtivado ? "overlay" : "backClose"} >
+              
             </Background>
           </Menu> 
 

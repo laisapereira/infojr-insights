@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const ContainerCards = styled.div `
     display:flex;
     flex-direction:column;
-    gap: 2.4rem;
-    height: 80vh;
+    height: 500px;
     width: 233vw;
     overflow:auto;
     ::-webkit-scrollbar {
@@ -13,6 +12,7 @@ export const ContainerCards = styled.div `
     @media(max-width: 1024px) {
         width:80vw;
         height: 100vh;
+        margin-left: -5vw;
         
         
        
@@ -30,12 +30,16 @@ export const ContainerCard = styled.div `
     height: max-content;
     padding: 2rem;
     border-radius: 1rem;
+    width: 55vw;
+    margin: 0 auto 2.9rem 0;
+    margin-bottom: 2.9rem;
         &:hover{
             box-shadow: red;
             
         }
     
     @media(max-width: 800px) {
+        width: 80vw;
        
         flex-direction:column;
         gap:0;
@@ -47,8 +51,9 @@ export const ContainerCard = styled.div `
     }
 
     @media screen and (min-width: 801px) and (max-width: 1200px) {
-       
+        width: 80vw;
         padding: 1.5rem;
+        margin
     }
 
 

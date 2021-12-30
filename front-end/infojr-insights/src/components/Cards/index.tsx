@@ -6,7 +6,7 @@ const Card: React.FC = () => {
 
 
     
-      <ContainerCard>
+      < ContainerCard>
         <div>
             <a href="/ideia"><img src={'icon_ideia.svg'} alt="logo" /></a>
         </div>

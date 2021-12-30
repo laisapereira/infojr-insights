@@ -32,10 +32,5 @@ export const Container = styled.div`
 `
 
 export const CardFilter = styled.div`
-        display:flex;
-        flex-direction:row;
 
-        ContainerCard {
-            width: 50%;
-        }
 `

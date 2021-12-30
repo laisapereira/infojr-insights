@@ -11,7 +11,7 @@ export const Container = styled.div `
 
             
     @media (max-width: 768px) {
-        padding: 2rem 3rem;
+        padding: 2rem 5rem;
         justify-content: space-between;
 
 
@@ -91,13 +91,14 @@ export const Button = styled.button`
                 flex-direction:column;
                 justify-content:center;
                 position:absolute;
-                width:60vw;
-                top: 7rem;
-                right: 20%;
+                width:70vw;
+                top: 6rem;
+                right: 15%;
                 height: 50vh;
                 border-radius: 1.2rem;
                 background-color: ${props => props.theme.colors.background};
                 overflow:hidden;
+                z-index: 10;
 
             
             }
@@ -109,6 +110,18 @@ export const Button = styled.button`
             #btn-menu {
                 background-color: transparent;
             }
+
+            .overlay {
+                bottom: 0;
+                left: 0;
+                position: fixed;
+                right: 0;
+                top: 6rem;
+                backdrop-filter: blur(0.15rem);
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            
+            
 
         
         
@@ -127,14 +140,44 @@ export const Button = styled.button`
     `
 
     export const Background = styled.div `
+
         
-        width:100vw;
-        background: rgba(26, 28, 23, 0,6);
-        position:absolute;
-        z-index: 1;
-        background-color: black;
-        opacity: 0.2;
-        position:absolute;
+                .overlay:before {
+                    content:"";
+                    width:100vw;
+                    background: rgba(26, 28, 23, 0,6);
+                    position:absolute;
+                    z-index: -1;
+                    left:0;
+
+                    background-color: blue;
+                    opacity: 0.2;
+                    position:absolute;
+                    height: 50vh;
+
+                    -webkit-filter: blur(15px);
+                    -moz-filter: blur(15px);
+                    -o-filter: blur(15px);
+                    -ms-filter: blur(15px);
+                    filter: blur(15px);
+
+
+
+                }
+
+
+                .overlay {
+                    position:absolute;
+                    left: 0;
+                    z-index:0;
+
+                }
+                
+                
+            
+
+
+        
 
         
 

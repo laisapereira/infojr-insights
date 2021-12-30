@@ -8,12 +8,13 @@ export const Container = styled.div`
     gap: 3rem;
     
     @media(max-width: 768px) {
-        
-        margin: 4rem auto;
+        width: 90vw;
+        margin: 4rem 0 0 5rem;
         gap: 2rem;
     }
     @media screen and (min-width: 769px) and (max-width: 1300px) {
         margin: 7rem auto;
+        width: 90vw;
        
         
         
@@ -56,7 +57,7 @@ export const Main = styled.div`
         width: 80%;
     }
     @media screen and (min-width: 801px) and (max-width: 1300px) {
-        width: 30vw;
+        width: 80vw;
        
         
         
