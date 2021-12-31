@@ -39,20 +39,19 @@ button:hover {
     align-items:center;
     gap: 8rem;
 }
-@media(max-width: 1024px) {
+@media(max-width: 850px) {
         
     .container-home {
         flex-direction: column;
-        gap: 0;
+        gap: 5rem;
         padding-bottom: 16.4rem;
     }
 }
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 851px) and (max-width: 1200px) {
     .container-home {
         flex-direction:row;
         gap: 5rem;
         padding-bottom: 16.4rem;
-        padding-left: 6vw;
     }
 }
 `
