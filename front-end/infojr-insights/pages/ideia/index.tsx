@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../src/components/Header'
 import Footer from '../../src/components/Footer'
-import Ideia from '../../src/components/Ideia'
+import Ideia from '../../src/components/Idea'
 
 
 export default function ideia() {
