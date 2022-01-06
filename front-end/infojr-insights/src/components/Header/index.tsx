@@ -35,15 +35,16 @@ const Header: React.FC = () => {
         </button>
 
         <nav className={menuAtivado ? 'menuOpen' : 'menuClose'}>
-          <MenuItem onClick={toggleMenu}>
-            <a href="/">Início</a>
+          <MenuItem href="/" onClick={toggleMenu}>
+            {' '}
+            Início
           </MenuItem>
-          <MenuItem onClick={toggleMenu}>
-            <a href="/filter">Todos os links</a>
+          <MenuItem href="/filter" onClick={toggleMenu}>
+            Todos os links
           </MenuItem>
-          <Button onClick={toggleMenu}>
-            <a href="/form">Adicionar Link</a>
-          </Button>
+          <a href="/form">
+            <Button onClick={toggleMenu}>Adicionar Link</Button>
+          </a>
         </nav>
 
         <Background className={menuAtivado ? 'overlay' : 'backClose'} />
