@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Form = styled.form`
   h1 {
     color: ${props => props.theme.colors.second};
     text-align: center;
@@ -23,7 +23,7 @@ export const Container = styled.div`
   }
 `
 
-export const ContainerForms = styled.form`
+export const ContainerForms = styled.div`
   display: flex;
   gap: 2.5rem;
 

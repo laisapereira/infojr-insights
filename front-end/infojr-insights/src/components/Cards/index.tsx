@@ -51,13 +51,8 @@ const Card: React.FC = () => {
             <div key={card.id}>
               <h4>{card.title}</h4>
               <h5> {card.classification} </h5>
-              <p>
-                {' '}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
-                fermentum feugiat ipsum in in quis. Mattis sit ac, posuere eu
-                tellus risus sed leo vel. Purus sagittis, arcu...{' '}
-              </p>
-              <a href="/ideia"> Ir para ideia </a>
+              <p>{card.description_idea}</p>
+              <a href="/ideia"> Ir para a ideia </a>
             </div>
           ))}
         </Inform>

@@ -13,26 +13,28 @@ import {
 
 const IdeiaForm: React.FC = () => {
   const { formFields, createChangeHandler } = useFormFields({
-    titulo: '',
-    categorias: '',
-    descrip: '',
-    link1: '',
-    link2: '',
+    title: '',
+    classification: '',
+    description_idea: '',
+    ideia_url: '',
+    image_url: '',
   })
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     axios
-      .post('/form', {
-        titulo: formFields.titulo,
-        categorias: formFields.categorias,
-        descrip: formFields.descrip,
-        link1: formFields.link1,
-        link2: formFields.link2,
+      .post('https://api-infoinsights.herokuapp.com/api/insights&page=1', {
+        title: formFields.title,
+        classification: formFields.classification,
+        description_idea: formFields.description_idea,
+        ideia_url: formFields.ideia_url,
+        image_url: formFields.image_url,
       })
       .then(response => {
+        // eslint-disable-next-line no-console
         console.log(response)
       })
       .catch(error => {
+        // eslint-disable-next-line no-console
         console.log(error)
       })
   }
@@ -43,24 +45,24 @@ const IdeiaForm: React.FC = () => {
 
       <ContainerForms>
         <EachForm>
-          <label htmlFor="titulo">Título do link</label>
+          <label htmlFor="title">Título do link</label>
           <input
-            name="titulo"
+            name="title"
             type="text"
-            id="titulo"
-            value={formFields.titulo}
-            onChange={createChangeHandler('titulo')}
+            id="title"
+            value={formFields.title}
+            onChange={createChangeHandler('title')}
             placeholder="Escreva um título para o link"
           />
         </EachForm>
 
         <EachForm>
-          <label htmlFor="categorias">Categoria</label>
+          <label htmlFor="classification">Categoria</label>
           <select
-            onChange={createChangeHandler('categorias')}
-            value={formFields.categorias}
-            name="categorias"
-            id="categorias"
+            onChange={createChangeHandler('classification')}
+            value={formFields.classification}
+            name="classification"
+            id="classification"
           >
             <option value="--">--</option>
             <option value="Design UI/UX">Design UI/UX</option>
@@ -73,23 +75,23 @@ const IdeiaForm: React.FC = () => {
 
       <ContainerForms>
         <EachForm>
-          <label htmlFor="link1">Link principal</label>
+          <label htmlFor="ideia_url">Link principal</label>
           <input
             type="url"
-            id="link1"
-            value={formFields.link1}
-            onChange={createChangeHandler('link1')}
+            id="ideia_url"
+            value={formFields.ideia_url}
+            onChange={createChangeHandler('ideia_url')}
             placeholder="Ex. https://www.linkutil.com"
           />
         </EachForm>
 
         <EachForm>
-          <label htmlFor="link2">Link secundário (opcional)</label>
+          <label htmlFor="image_url">Link secundário (opcional)</label>
           <input
             type="url"
-            id="link2"
-            value={formFields.link2}
-            onChange={createChangeHandler('link2')}
+            id="image_url"
+            value={formFields.image_url}
+            onChange={createChangeHandler('image_url')}
             placeholder="Escreva um link alternativo"
           />
         </EachForm>
@@ -100,16 +102,16 @@ const IdeiaForm: React.FC = () => {
           <span>Digite uma</span> Descrição <span>para este link</span>
         </label>
         <textarea
-          id="descrip"
-          value={formFields.descrip}
-          onChange={createChangeHandler('descrip')}
+          id="description_idea"
+          value={formFields.description_idea}
+          onChange={createChangeHandler('description_idea')}
           placeholder="Escreva uma descrição"
         />
       </EachForm>
 
       <Buttons>
         <input id="cancel" type="button" value="Cancelar" />
-        <input id="submit" type="submit" value="Cadastrar" />
+        <input id="submit" type="submit" value="Submit" />
       </Buttons>
     </Form>
   )
