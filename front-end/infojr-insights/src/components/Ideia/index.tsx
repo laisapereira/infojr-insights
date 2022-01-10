@@ -3,9 +3,8 @@ import React from 'react'
 import { Button } from '../../styles/header'
 import { Container, ContainerIdeia } from '../../styles/ideia'
 
-export const Ideia: React.FC = () => (
+const Ideia: React.FC = () => (
   <Container>
-   
     <div>
       <a href="#">
         <img id="desk-image" src="image-ideia.svg" alt="ideia" />
@@ -45,3 +44,5 @@ export const Ideia: React.FC = () => (
     </ContainerIdeia>
   </Container>
 )
+
+export default Ideia
