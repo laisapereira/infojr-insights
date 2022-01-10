@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from '../../styles/header'
 import { Container, ContainerIdeia } from '../../styles/ideia'
 import card from  '../Cards/index'
+import axios from 'axios'
 
 interface ICard {
   id: number
@@ -38,9 +39,6 @@ const Card: React.FC = () => {
 
 return(
   <Container>
-    {
-      card.map((card, i) => {
-        return (
           <div>
             <div>
           <a href="#">
@@ -52,7 +50,7 @@ return(
         </div>
     
         <ContainerIdeia>
-          <h1>{ha} </h1>
+          <h1> </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed
             quis consectetur eleifend nulla malesuada augue a, tristique. Id cum

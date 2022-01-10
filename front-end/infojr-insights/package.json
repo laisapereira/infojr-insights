@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf dist/",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
