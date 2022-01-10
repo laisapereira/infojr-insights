@@ -4,16 +4,17 @@ export const Container = styled.div`
     display:flex;
     flex-direction:column;
     width: 90vw;
-    margin: 6rem auto;
+    margin: 15rem auto;
     gap: 3rem;
     
     @media(max-width: 768px) {
-        
-        margin: 4rem auto;
+        width: 90vw;
+        margin: 4rem 0 0 5rem;
         gap: 2rem;
     }
     @media screen and (min-width: 769px) and (max-width: 1300px) {
         margin: 7rem auto;
+        width: 90vw;
        
         
         
@@ -31,10 +32,10 @@ export const Title = styled.div`
     }
     @media(max-width: 1024px) {
         #title {
-            width: 40vw;
+            width: 30vw;
         }
         #subtitle {
-            width: 30vw;
+            width: 20vw;
         }
         
     }
@@ -56,7 +57,7 @@ export const Main = styled.div`
         width: 80%;
     }
     @media screen and (min-width: 801px) and (max-width: 1300px) {
-        width: 30vw;
+        width: 35vw;
        
         
         
@@ -69,16 +70,20 @@ export const Buttons = styled.div`
     gap: 1rem;
  
     #button-aside-two {
-        padding: 1rem 4.7rem;
+        padding: 1rem 7.7rem;
         border-radius: 3rem;
         height:max-content;
         &:hover {
             cursor:pointer;
         }
+
     }
     span {
         color:  ${props => props.theme.colors.primary}
     }
+
+    
+
     @media(max-width: 768px) {
         
         width: 80%;

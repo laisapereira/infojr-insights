@@ -1,22 +1,24 @@
 import React from 'react'
-import { ContainerButton } from "./style";
+
+import { ContainerButton } from './style'
 
 interface ButtonProps {
-    backgroundColor:string;
-    hoverColor:string;
-    color: string;
+  backgroundColor: string
+  hoverColor: string
+  color: string
 }
 
-
-const Button: React.FC <ButtonProps> = ({
-    backgroundColor = "red",
-    hoverColor = "white",
-    children = "Adicionar Link",
-    color= "black" }) => (
-    <ContainerButton backgroundColor={backgroundColor} hoverColor={hoverColor} >
-    {children} </ContainerButton>
-);
+const Button: React.FC<ButtonProps> => {
+  backgroundColor = 'red',
+  hoverColor = 'white',
+  children = 'Adicionar Link',
+  color = 'black',
+} {
+  return (
+    <ContainerButton backgroundColor={backgroundColor} hoverColor={hoverColor}>
+      {children}{' '}
+    </ContainerButton>
+  )
+}
 
 export default Button
-
-

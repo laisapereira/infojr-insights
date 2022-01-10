@@ -25,13 +25,13 @@ module.exports = {
       extends: [
         'next',
         'next/core-web-vitals',
+        'airbnb',
+        'airbnb-typescript',
         'plugin:prettier/recommended',
         'plugin:sonarjs/recommended',
         'plugin:security/recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
-        'airbnb',
-        'airbnb-typescript',
         'plugin:import/typescript',
         'prettier',
       ],
@@ -46,7 +46,6 @@ module.exports = {
         tsconfigRootDir: __dirname,
       },
       plugins: [
-        'react',
         '@typescript-eslint',
         'unicorn',
         'simple-import-sort',
@@ -71,12 +70,8 @@ module.exports = {
         'unicorn/filename-case': 'off',
         'simple-import-sort/imports': 'error',
         'import/extensions': 'off',
-        'react/button-has-type': 'off',
-        'react/function-component-definition': [
-          2,
-          { namedComponents: 'arrow-function' },
-        ],
+        'react/button-has-type': 'off'
       },
     },
   ],
-}
+};
