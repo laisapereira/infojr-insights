@@ -6,7 +6,7 @@ const Footer: React.FC = () => (
   <Container>
     <SocialNetwork>
       <a href="/index">
-        <img src="/Logo Infojr.svg" alt="logo" />
+        <img src="/logo_infojr.svg" alt="logo" />
       </a>
       <div>
         <a href="#">
