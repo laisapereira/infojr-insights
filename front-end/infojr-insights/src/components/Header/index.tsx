@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     <Container>
       <div>
         <a href="/">
-          <img src="Logo Infojr.svg" alt="logo" />
+          <img src="/logo_infojr.svg" alt="logo" />
         </a>
       </div>
 
