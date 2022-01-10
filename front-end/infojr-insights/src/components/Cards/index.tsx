@@ -24,7 +24,7 @@ const Card: React.FC = () => {
     ;(async () => {
       try {
         const response = await axios.get(
-          'https://api-infoinsights.herokuapp.com/api/insights&page=1'
+          'https://api-infoinsights.herokuapp.com/api/vitrine'
         )
         setCards(response.data.results)
       } catch (err) {
