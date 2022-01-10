@@ -16,10 +16,6 @@ export default function Home() {
         <AsideHome />
         <ContainerCards>
           <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
         </ContainerCards>
       </div>
       <Footer />

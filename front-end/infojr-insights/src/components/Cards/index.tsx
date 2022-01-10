@@ -1,8 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { isNullishCoalesce } from 'typescript'
 
-import { CardContainer, ContainerCard, Inform } from '../../styles/card'
+import { AboutCard, ContainerCard, ImagCard, Inform } from '../../styles/card'
 
 interface ICard {
   id: number
@@ -36,27 +35,26 @@ const Card: React.FC = () => {
     })()
   }, [])
 
-  console.log(cards)
   return (
     <ContainerCard>
-      <CardContainer>
-        <div>
-          <a href="/ideia">
-            <img src="icon_ideia.svg" alt="logo" />
-          </a>
-        </div>
+      <Inform>
+        {cards.map(card => (
+          <section key={card.id}>
+            <ImagCard>
+              <a href="/ideia">
+                <img src={card.image_url} alt="logo" />
+              </a>
+            </ImagCard>
 
-        <Inform>
-          {cards.map(card => (
-            <div key={card.id}>
+            <AboutCard>
               <h4>{card.title}</h4>
               <h5> {card.classification} </h5>
               <p>{card.description_idea}</p>
               <a href="/ideia"> Ir para a ideia </a>
-            </div>
-          ))}
-        </Inform>
-      </CardContainer>
+            </AboutCard>
+          </section>
+        ))}
+      </Inform>
     </ContainerCard>
   )
 }
