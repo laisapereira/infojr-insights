@@ -36,10 +36,7 @@ export const AboutCard = styled.div`
 
   p {
     max-height: 5rem;
-    white-space: nowrap;
-    width: 100%;
-    overflow: hidden;              
-    text-overflow: ellipsis;
+    
   }
 `
 

@@ -41,8 +41,8 @@ const Card: React.FC = () => {
         {cards.map(card => (
           <section key={card.id}>
             <ImagCard>
-              <a href="/ideia">
-                <img src={card.image_url} alt="logo" />
+              <a href="/ideia"> 
+              {card.image_url}? <img src={card.image_url} alt="logo"/> : <img src="/teste.jpg" alt="não encontrada" />
               </a>
             </ImagCard>
 
